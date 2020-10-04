@@ -1,0 +1,34 @@
+<% include header.ejs %>
+
+    <!-- DIseña acá tu vista -->
+    <div class="container mt-5">
+        <form>
+            <div class="form-group row">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Descripción</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="descripcion">
+            </div>
+            </div>
+            <div class="form-group row">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Location</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="location">
+            </div>
+            </div>
+            <div class="form-group row">
+            <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary" id="buscar">Buscar</button>
+            </div>
+            </div>
+        </form>
+    </div>
+
+    <main class="mt-5 container">
+        <h2 class="text-center">Listado de Empleo</h2>
+        <ul id="contenedor-empleo">
+
+        </ul>
+    </main>
+
+    <script type="module" src="/actions/jobs.js"></script>
+<% include footer.ejs %>
